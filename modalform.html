@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>model page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+       .table11
+       {
+           background-color: lavender;
+           border: 2px solid black;
+
+       }
+       .table12
+       {
+           background-color: lightgray;
+           border: 2px solid black;
+           margin: 80px;
+           padding: 150px;
+       }
+       body{
+           background-color: lavenderblush;
+       }
+       
+    </style>
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        <div class="row" style="margin: 30px;">
+            <div class="col-md-8">
+
+                <h2>Login Form</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h1 style="color: blue; text-align: center;"> Login Form</h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" >
+                                <form>
+                                    <table class="table12">
+                                        <tr>
+                                            <th>
+                                        
+                                             E-mail :</th>
+                                         <td>    <input type="email" name="eamil" maxlength="50" placeholder="Enter the Email" required > 
+                                    </td>
+                                    </tr>
+                                    <tr> <td>&nbsp;</td> </tr>
+                                    
+                                        
+                                    <tr>
+                                        <th>
+                                    
+                                           Password:</th>
+                                        <td>   <input type="password" name="password" placeholder="Enter the password" required>
+                                           </td>
+                                           </tr>
+
+                                           <tr>
+                                               <th></th>
+                                           
+                                           <td>    <input type="submit" value="submit"></td>
+                                           </tr>
+                                           </table>
+                                                      
+                                    
+                                </form>
+                             </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4" >
+
+                <h2> Registration form</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h1 id="h12" style="color: crimson;"> Registration Form</h1>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form>
+                                   
+                                    
+                                    <table class="table11">
+                                        <tr>
+                                             <td> First name :</td>
+                                     <td> <input type="text" name="firstname" maxlength="50" placeholder="Enter the First name" required >   </td>  </tr>
+                            
+                                     <tr>
+                                    <td> Last name :</td>
+                                  <td>  <input type="text" name="lastname" maxlength="50" placeholder="Enter the Last name" required >  </td> </tr>
+                            
+                                     <tr>
+                                  <td> E-mail:</td>
+                                <td> <input type="email" name="email " placeholder="Enter the E-mail" required>   </td> </tr>
+                            
+                                  <tr>
+                                <td> Mother Name :</td>
+                                  <td>  <input type="text" name="mothername" maxlength="50" placeholder="Enter the Mother Name name" required>   </td> </tr>
+                            
+                                 <tr>
+                                 <td> Mob NO:</td>
+                                  <td>  <input type="text" name="Mob NO" maxlength="10" placeholder="7842xxxxxx"required>
+                                      (10 Digits Allowed)  </td> </tr>
+                            
+                                      <tr>
+                                   <td> Gender:</td>
+                                  <td>  <input type="radio" name="gender" value="male" > Male
+                                    <input type="radio" name="gender" value="female"> Female </td> </tr>
+                            
+                                    <tr>
+                                  <td>DOB:</td>
+                                     <td><input type="date" name= "bday"></td></tr>
+                            
+                                     <tr>
+                                <td> City:</td>
+                                <td><select name="City">
+                                    <option value="Pune">Pune</option>
+                                    <option value="Nashik">Nashik</option>
+                                    <option value="Jamner">Jamner</option>
+                                    <option value="Jalgaon">Jalgaon</option>
+                                    </select><br><br /> </td></tr >
+                            
+                                    <tr>
+                              <td>  Address:<br> <br />
+                              <td>  <textarea name="Address" rows="5" cols="20" required></textarea> </td></tr>
+                            
+                               <tr>
+                              <td>  Pin Code:</td>
+                               <td> <input type="Number" name="PinCode" maxlength="6" placeholder="560068" required>
+                            (Max 6 Numbers Allowed)</td></tr>
+                            
+                                  <tr>
+                                <td>State:</td>
+                               <td> <input type="text" name="State" maxlength="50" placeholder="enter State"required>
+                                  (Max 50 Characters Allowed) </td></tr>
+                            
+                                  <tr>
+                               <td> Hobbies : </td>
+                              <td>  <input type="checkbox" name="HobbyDrawing" value="Drawing" />
+                                Drawing
+                                <input type="checkbox" name="HobbySinging" value="Singing" />
+                                Singing
+                                <input type="checkbox" name="HobbyDancing" value="Dancing" />
+                                Dancing
+                                <input type="checkbox" name="HobbyCooking" value="Cooking" />
+                                Sketching <br></td></tr>
+                            
+                                <tr>
+                               <td> Qualification:</td>
+                                  <td>   <input type="checkbox" name="HighSchool" value="High School" />
+                                      High School(10th)<br>
+                                     <input type="checkbox" name="HigherSchool" value="Higher School" />
+                                      Higher School(12th)<br>
+                                    <input type="checkbox" name="Graduation" value="Graduation" />
+                                     Graduation(Bachelors)<br>
+                                   <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+                                    Post Graduation(Masters)<br>
+                                    <input type="checkbox" name="Phd" value="Phd">
+                                    Phd<br> </td></tr>
+                            
+                                   <tr>
+                                   <td> Courses :</td>
+                                    <td><input type="radio" name="CourseBCA" value="BCA">
+                                     BCA<br>
+                                   <input type="radio" name="CourseBCom" value="B.Com">
+                                     B.Com<br>
+                                   <input type="radio" name="CourseBSc" value="B.Sc">
+                                    B.Sc<br>
+                                <input type="radio" name="CourseMA" value="B.A">
+                                   MA<br></td></tr>
+                            
+                                 <tr>
+                                  <td> select Document:</td>
+                                   <td><input type="file" name="file" multiple> </td></tr>
+                            
+                                   
+                                   <tr>
+                                    <td colspan="2"  text-align="center">
+                                        
+                                   
+                                <input  type="submit"  class="button" value="send">
+                            
+                                <input type="reset" class="button">
+                                    </td>
+                                    </tr>
+                                    </table>
+                            
+                                </form>
+                                
+                            
+                                
+
+                                
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+<div class="row " style="margin: 30px;">
+            <div class="col-md-8">
+
+                <h2>Sign Up</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal3">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="color: darkred;">Sign up</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                      <label for="email">Email:</label>
+                                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="pwd">Password:</label>
+                                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    </div>
+                                    <div class="form-group form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                      </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+
+
+
+                                
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>Visiting Card</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal4">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">visiting card</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/cardpason2.jpg" class="card-img-top" alt="..." style="height: 150px;width: 100%;">
+                                    <div class="card-body">
+                                       <blockquote>
+                                           <b>Name:</b>John Doe Willom.
+                                           <b>Professional:</b>Consulttant.
+                                           <b>Country:</b>United Kingdom.<br>
+                                           <b>Phone:</b> +0123654789
+                                           <b> Email:</b>Jone.dee@gmail.com
+                                       </blockquote>
+                                    </div>
+                                  </div>
+                              </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row" style="margin: 30px;">
+            <div class="col-md-8">
+
+                <h2>Carousel</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal5">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Carousel</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="img/img4.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 300px;">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/imgs2.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 300px;">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="img/imgs3.jpg" class="d-block w-100" alt="..." style="width: 100%; height: 300px;">
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div> 
+
+
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2>Table</h2>
+                <!-- Button to Open the Modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+                    Open modal
+                </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal6">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Table</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="container">
+                                                
+                                    <table class="table table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th>Firstname</th>
+                                          <th>Lastname</th>
+                                          <th>Email</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>John</td>
+                                          <td>Doe</td>
+                                          <td>john@example.com</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Mary</td>
+                                          <td>Moe</td>
+                                          <td>mary@example.com</td>
+                                        </tr>
+                                        <tr>
+                                          <td>July</td>
+                                          <td>Dooley</td>
+                                          <td>july@example.com</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                  
+                              
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
